@@ -10,7 +10,6 @@
   --very-light-gray: hsl(0, 0%, 98%);
 }
 
-
 *{
   margin: 0;
   padding: 0;
@@ -29,6 +28,7 @@ body {
 section {
   padding: 6.13rem 2.67rem;
 }
+
 section > h1 {
   font-size: 1.6rem;
   text-align: center;
@@ -44,10 +44,39 @@ section > strong {
   font-weight: 600;
 }
 
-
 section > p {
   text-align: center;
   color: var(--grayish-blue);
   line-height: 1.67rem;
   padding: 2rem 0 5.33rem 0;
+ }
+
+ .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+ }
+
+ .cards > div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.87rem;
+  border-radius: 0.5rem;
+  
+ }
+
+ .cards .image-container{
+  text-align: right;
+ }
+
+ .cards > div:first-child {
+    border-top: 0.2rem solid var(--cyan);
+ }
+ .cards > div:nth-child(2) {
+    border-top: 0.2rem solid var(--red);
+ }
+ .cards > div:nth-child(3)  {
+    border-top: 0.2rem solid var(--orange);
+ }
+ .cards > div:nth-child(4) {
+    border-top: 0.2rem solid var(--blue);
  }
