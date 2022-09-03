@@ -104,14 +104,28 @@ section > p {
  }
 
 
- @media screen and (min-width: 51em) {
+ @media screen and (min-width: 65em) {
 
   main{
     max-width: 1440px;
     padding: 0 11rem;
   }
+
+
+  section > p {
+    text-align: center;
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+  
   .cards {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
+  }
+
+  .card {
+    min-width: 350px;
   }
  }
