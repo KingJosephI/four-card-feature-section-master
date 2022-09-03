@@ -46,37 +46,55 @@ section > strong {
 
 section > p {
   text-align: center;
+  font-size: 1rem;
   color: var(--grayish-blue);
   line-height: 1.67rem;
   padding: 2rem 0 5.33rem 0;
- }
+}
 
  .cards {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
  }
 
- .cards > div {
+ .card {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 1.87rem;
   border-radius: 0.5rem;
-  
+  max-width: 311px;
  }
 
- .cards .image-container{
+ .card:not(last-of-type){
+  margin-bottom: 2rem;
+ }
+
+ .card h2  {
+  font-weight: 600;
+  font-size: 1.33rem;
+  color: var(--very-dark-blue);
+ }
+
+ .card p {
+  color: var(--grayish-blue);
+  line-height: 1.53rem;
+  font-size: 0.87rem;
+  padding-bottom: 2.2rem;
+}
+
+ .card .image-container{
   text-align: right;
  }
 
- .cards > div:first-child {
+ .card:first-child {
     border-top: 0.2rem solid var(--cyan);
  }
- .cards > div:nth-child(2) {
+ .card:nth-child(2) {
     border-top: 0.2rem solid var(--red);
  }
- .cards > div:nth-child(3)  {
+ .card:nth-child(3)  {
     border-top: 0.2rem solid var(--orange);
  }
- .cards > div:nth-child(4) {
+ .card:nth-child(4) {
     border-top: 0.2rem solid var(--blue);
  }
