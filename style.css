@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 section {
@@ -86,15 +87,31 @@ section > p {
   text-align: right;
  }
 
- .card:first-child {
+ .card.supervisor {
     border-top: 0.2rem solid var(--cyan);
  }
- .card:nth-child(2) {
+
+ .card.team {
     border-top: 0.2rem solid var(--red);
  }
- .card:nth-child(3)  {
+
+ .card.karma  {
     border-top: 0.2rem solid var(--orange);
  }
- .card:nth-child(4) {
+
+ .card.calculator {
     border-top: 0.2rem solid var(--blue);
+ }
+
+
+ @media screen and (min-width: 51em) {
+
+  main{
+    max-width: 1440px;
+    padding: 0 11rem;
+  }
+  .cards {
+    flex-direction: row;
+    gap: 2rem;
+  }
  }
